@@ -32,7 +32,7 @@ public class Main {
 		
 	}
 	
-	private static boolean isPrime(int number) {
+	private static boolean isPrime(final int number) {
 		//1 is not a prime
 		if(number <= 1) {
 			return false;
