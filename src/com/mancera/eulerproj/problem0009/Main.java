@@ -1,7 +1,5 @@
 package com.mancera.eulerproj.problem0009;
 
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Collections;
-
 /*
 	A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,
 
@@ -16,8 +14,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		int product = pythagoreanTripletProduct(1000);
-		System.out.println("Triplet: " + product);
-		
+		System.out.println("Triplet: " + product);		
 
 	}
 	
