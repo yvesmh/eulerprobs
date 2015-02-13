@@ -16,19 +16,21 @@ public class Main {
 	private static long smallestEvenlyDivisible(final int number) {
 		//start at the number to avoid unnecessary iterations 
 		long smallest = number;
+		if(smallest % 2 != 0) {
+			smallest++;
+		}
 		int evenlyDivided = 0;
 		int i = 0;
 		
 		while(smallest < Long.MAX_VALUE) {
 
-			for(i = 1; i <= number; i++) {
+			for(i = number; i > 0; i--) {
 				
 				if(smallest % i == 0) {
-					evenlyDivided++;
-					continue;
+					evenlyDivided++;					
 				} else {
 					evenlyDivided = 0;
-					smallest++;
+					smallest+=number;
 					break;
 				}
 			}
